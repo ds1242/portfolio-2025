@@ -16,5 +16,29 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
+  box-sizing: content-box;
 }
+
+
+body{ 
+  margin:0px;
+}
+
+@media (prefers-color-scheme: light) {
+  .light-background-text {
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+  }
+}
+
+
+@media (prefers-color-scheme: dark) {
+  .dark-background-text {
+    color: var(--accent-color-light);
+    background-color: var(--third-color);
+  }
+}
+
+
 

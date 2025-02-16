@@ -1,0 +1,28 @@
+.navbar {
+    font-size: 20px;
+    margin: 0;
+    display: flex;
+    align-items:center;
+}
+
+.navbar ul{
+    list-style-type: none;
+    
+}
+
+.brand {
+    margin-right: auto;
+    padding-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    
+}
+.links {
+    display: flex;
+    align-items: center;
+    padding-right: 10px;
+}
+
+.link-item {
+    margin:5px;
+}
