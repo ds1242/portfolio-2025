@@ -5,7 +5,7 @@
   line-height: 1.5;
   font-weight: 400;
 
-  color-scheme: light dark;
+  color-scheme: only light;
   --primary-color: #A8DADC;
   --secondary-color: #457B9D;
   --third-color: #1D3557;

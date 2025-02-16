@@ -7,14 +7,21 @@ export default function Navbar() {
                 David Shaw
             </h1>
             <ul className='links'>
-                <li className='link-item'>                    
-                    About Me
+                <li className='link-item'>
+                    <a href="">
+                        // Home
+                    </a>
                 </li>
                 <li className='link-item'>                    
-                    Projects
+                    <a href="">
+                    // About Me
+                    </a>
                 </li>
                 <li className='link-item'>                    
-                    Contact
+                    // Projects
+                </li>
+                <li className='link-item'>                    
+                    // Contact
                 </li>
             </ul>
         </div>
