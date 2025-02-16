@@ -8,20 +8,28 @@ export default function Navbar() {
             </h1>
             <ul className='links'>
                 <li className='link-item'>
+                    //
                     <a href="">
-                        // Home
+                        &nbsp;Home
                     </a>
                 </li>
-                <li className='link-item'>                    
+                <li className='link-item'>
+                    //
                     <a href="">
-                    // About Me
+                        &nbsp;About Me
                     </a>
                 </li>
-                <li className='link-item'>                    
-                    // Projects
+                <li className='link-item'>
+                    //
+                    <a href="">
+                        &nbsp;Projects
+                    </a>
                 </li>
-                <li className='link-item'>                    
-                    // Contact
+                <li className='link-item'>
+                    //
+                    <a href="">
+                        &nbsp;Contact
+                    </a>
                 </li>
             </ul>
         </div>
