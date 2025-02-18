@@ -2,12 +2,14 @@
 import './App.css'
 import Navbar from './components/Header/Navbar'
 
+import siteInfoConfig from "./siteInfoConfig.json"
+
 function App() {
   
 
   return (
     <div className='main'>
-      <Navbar />
+      <Navbar headerVals={siteInfoConfig.header} />
       
     </div>
   )
