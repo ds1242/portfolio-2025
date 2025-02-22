@@ -11,7 +11,7 @@ ul.menu {
     list-style-type: none;
     display: flex;
     margin: 0;
-    padding: 0;
+    /* padding: 0; */
 }
 
 ul.menu li {
@@ -47,6 +47,7 @@ ul.menu li {
     ul.menu {
         display: flex;
         flex-direction: column;
+        align-items:baseline;
         width: 100%;
         background-color: #333;
         position: absolute;
