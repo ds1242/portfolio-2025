@@ -8,9 +8,9 @@ interface HeaderProps {
     }[];
 }
 
-export default function Navbar:React.FC<HeaderProps>({ headerVals }) {
+export default function Navbar({ headerVals }:HeaderProps) {
 
-    const vals: headerVals = headerVals;
+    const vals: HeaderProps[] = headerVals;
 
     console.log(vals)
     return (
