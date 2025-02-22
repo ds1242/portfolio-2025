@@ -60,14 +60,23 @@ a:active {
 
 @media (max-width: 768px) {
     ul.menu {
-        display: none;
+        display: flex;
         flex-direction: column;
         width: 100%;
         background-color: #333;
         position: absolute;
         top: 60px;
         left: 0;
-        padding: 10px 0;
+        padding: 5px 0;
+        opacity: 0;
+        transition: all 0.3s ease-in-out;
+        z-index: -1;
+    }
+
+    ul.menu.active {
+        opacity: 1;
+        transform: translateY(0);
+        z-index: 1;
     }
 
     ul.menu li {
@@ -77,11 +86,8 @@ a:active {
 
     .hamburger {
         display: block;
-        padding-right: 1rem;
-        transition: 0.3s ease-in-out;
-    }
-
-    ul.menu.active {
-        display: flex;
+        padding: 5px;
+        cursor: pointer;
+        z-index: 2;
     }
 }
