@@ -25,7 +25,7 @@ export default function Navbar({ headerVals }:HeaderProps) {
             <h1 className='brand'>
                 David Shaw
             </h1>
-            <ul className={`menu links ${isActive ? 'active' : ''}`}>
+            <ul className={`menu links link-underline ${isActive ? 'active' : ''}`}>
             {/* <ul className='menu links'> */}
                 {vals.map(val =>
                     // {console.log(val)}

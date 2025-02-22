@@ -18,22 +18,7 @@ ul.menu li {
     margin: 0 10px;
 }
 
-a {
-    color: var(--accent-color-light);
-    text-decoration: none;
-    background-image: linear-gradient(var(--accent-color-bright), var(--accent-color-bright));
-    background-size: 0% 0.1em;
-    background-position-y: 100%;
-    background-position-x: 50%;
-    background-repeat: no-repeat;
-    transition: background-size 0.3s ease-in-out;
-}
 
-a:hover,
-a:focus,
-a:active {
-    background-size: 100% 0.1em;
-}
 
 .brand {
     margin-right: auto;
