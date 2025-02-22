@@ -12,23 +12,19 @@ interface HeaderProps {
 export default function Navbar({ headerVals }:HeaderProps) {
     const [isActive, setIsActive] = useState(false);
 
-    const vals: HeaderProps[] = headerVals;
+    const vals = headerVals;
 
     const toggleMenu = () => {
-        console.log("clicked")
         setIsActive(!isActive);
     }
 
-    console.log(vals)
     return (
         <div className="dark-background-text light-background-text navbar">
             <h1 className='brand'>
                 David Shaw
             </h1>
             <ul className={`menu links link-underline ${isActive ? 'active' : ''}`}>
-            {/* <ul className='menu links'> */}
                 {vals.map(val =>
-                    // {console.log(val)}
                     <li className='link-item' key={val.header_id + val.link_title}>
                     //
                         <a href={val.link_path}>

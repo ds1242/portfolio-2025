@@ -4,7 +4,7 @@ import Navbar from './components/Header/Navbar'
 import Footer from './components/Footer/Footer'
 import Content from './components/Content/Content'
 
-import siteInfoConfig from "./siteInfoConfig.json"
+import siteInfoConfig from "./siteInfoConfig"
 
 function App() {
   
@@ -12,8 +12,8 @@ function App() {
   return (
     <div className='main'>
       <Navbar headerVals={siteInfoConfig.header} />
-      <Content />
-      <Footer />
+        <Content />
+      <Footer footerVals={siteInfoConfig.footer}/>
     </div>
   )
 }

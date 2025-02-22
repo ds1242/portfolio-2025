@@ -1,3 +1,7 @@
+import GithubSVG from "./components/SVG/Github";
+import LinkedInSVG from "./components/SVG/LinkedIn";
+
+const config = 
 {
     "header": [
         {
@@ -23,14 +27,18 @@
     ],
     "footer": [
         {
-            "link_title": "github.com",
-            "link_path": "github.com"
+            "link_title": "GitHub",
+            "link_path": "https://github.com/ds1242",
+            "svg" : <GithubSVG />
         },
         {
-            "link_title": "another link",
-            "link_path": ""
+            "link_title": "LinkedIn",
+            "link_path": "https://www.linkedin.com/in/david-shaw1242/",
+            "svg" : <LinkedInSVG />
         }
     ],
     "projects": {}
 
 }
+
+export default config;
