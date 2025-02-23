@@ -30,7 +30,7 @@
     margin-left: auto;
     margin-right: auto;
     margin-top: 2rem;
-    background-color: rgba(29,53,87,0.8);
+    
     border-radius: .5rem;
     
 }
@@ -46,9 +46,13 @@
 }
 
 .hero-text {
-    color: var(--accent-color-light)
+    color: var(--accent-color-light);
+    background-color: rgba(29,53,87,0.85);
+    padding: 2rem;
+    border-radius: 1rem;
 }
 
 .hero-text p {
     text-wrap: wrap;
+    width: 400px;
 }

@@ -57,4 +57,25 @@ body{
   background-size: 100% 0.1em;
 }
 
-
+.slide-right {
+  animation: 3s slide-right;
+}
+@keyframes slide-right {
+  from {
+    margin-left: -150%;
+  }
+  to {
+    margin-left: 0%;
+  }
+}
+.slide-left {
+  animation: 3s slide-left;
+}
+@keyframes slide-left {
+  from {
+    margin-right: -150%;
+  }
+  to {
+    margin-right: 0%;
+  }
+}
