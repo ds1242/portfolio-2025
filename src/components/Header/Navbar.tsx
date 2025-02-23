@@ -20,8 +20,10 @@ export default function Navbar({ headerVals }:HeaderProps) {
 
     return (
         <div className="dark-background-text light-background-text navbar">
-            <h1 className='brand'>
-                David Shaw
+            <h1 className='brand links'>
+                <a onClick={() => navigateTo('/')}>
+                    David Shaw
+                </a>
             </h1>
             <ul className={`menu links link-underline ${isActive ? 'active' : ''}`}>
                 {vals.map((val, index) =>

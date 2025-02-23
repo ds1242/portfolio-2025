@@ -32,6 +32,7 @@ ul.menu li {
     display: flex;
     align-items: center;
     padding-right: 10px;
+    cursor: pointer;
 }
 
 .link-item {

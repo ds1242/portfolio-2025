@@ -8,6 +8,7 @@ import Footer from './components/Footer/Footer'
 import Home from './components/Home';
 import Contact from './components/Contact';
 import Projects from './components/Projects';
+import ErrorBoundary from './components/ErrorBoundary';
 // import Content from './components/Content/Content'
 
 import siteInfoConfig from "./siteInfoConfig"
@@ -32,9 +33,15 @@ function App() {
   return (
     <div className='main'>
       <Navbar headerVals={siteInfoConfig.header} />
+      <ErrorBoundary>
         {currentPage === '/' && <Home />}
+      </ErrorBoundary>
+      <ErrorBoundary>
         {currentPage === '/projects' && <Projects />}
+      </ErrorBoundary>
+      <ErrorBoundary>
         {currentPage === '/contact' && <Contact />}
+      </ErrorBoundary>
       <Footer footerVals={siteInfoConfig.footer} />
     </div>
   )
