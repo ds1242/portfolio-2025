@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import './Navbar.css';
+import { navigateTo } from '../../utils/router';
 
 interface HeaderProps {
     headerVals: {
@@ -26,7 +27,7 @@ export default function Navbar({ headerVals }:HeaderProps) {
                 {vals.map((val, index) =>
                     <li className='link-item' key={index + val.link_title}>
                     //
-                        <a href={val.link_path}>
+                        <a onClick={() => navigateTo(val.link_path)}>
                             &nbsp;{val.link_title}
                         </a>
                     </li>
