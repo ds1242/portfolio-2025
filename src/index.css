@@ -43,7 +43,7 @@ body{
 .link-underline a {
   color: var(--accent-color-light);
   text-decoration: none;
-  background-image: linear-gradient(var(--accent-color-bright), var(--accent-color-bright));
+  background-image: linear-gradient(#ffd101, #ffd101);
   background-size: 0% 0.1em;
   background-position-y: 100%;
   background-position-x: 50%;
@@ -58,7 +58,7 @@ body{
 }
 
 .slide-right {
-  animation: 3s slide-right;
+  animation: 2s slide-right;
 }
 @keyframes slide-right {
   from {
@@ -69,7 +69,7 @@ body{
   }
 }
 .slide-left {
-  animation: 3s slide-left;
+  animation: 2s slide-left;
 }
 @keyframes slide-left {
   from {
