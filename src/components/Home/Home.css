@@ -1,5 +1,6 @@
 .hero-section {
     width: 100%;
+    display: flex;
 }
 
 .hero-section::before {
@@ -13,7 +14,7 @@
     background-size:cover;
     background-position: center;
     background-repeat: no-repeat;
-    opacity: 0.5;
+    opacity: 0.4;
     z-index: -1;
 }
 
@@ -25,15 +26,29 @@
     justify-content: space-evenly;
     align-items: center;
     height: fit-content;
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    background-color: rgba(29,53,87,0.8);
+    border-radius: .5rem;
+    
 }
 
-
 .hero-profile-img {
-    margin: 10px
+    margin: 2rem;
 }
 
 .hero-profile-img img{
     max-width: 300px;
     height: auto;
-    border-radius: 15px;
+    border-radius: 1rem;
+}
+
+.hero-text {
+    color: var(--accent-color-light)
+}
+
+.hero-text p {
+    text-wrap: wrap;
 }
