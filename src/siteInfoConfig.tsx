@@ -5,22 +5,14 @@ const config =
 {
     "header": [
         {
-            "header_id": 1,
-            "link_title": "Home",
+            "link_title": "About Me",
             "link_path": "/"
         },
-        {   
-            "header_id": 2,
-            "link_title": "About Me",
-            "link_path": "/about"
-        },
         {
-            "header_id": 3,
             "link_title": "Projects",
             "link_path": "/projects"
         },
         {
-            "header_id": 4,
             "link_title": "Contact",
             "link_path": "/contact"
         }

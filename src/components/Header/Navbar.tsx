@@ -3,7 +3,6 @@ import './Navbar.css';
 
 interface HeaderProps {
     headerVals: {
-        header_id: number;
         link_title: string;
         link_path: string;
     }[];
@@ -24,8 +23,8 @@ export default function Navbar({ headerVals }:HeaderProps) {
                 David Shaw
             </h1>
             <ul className={`menu links link-underline ${isActive ? 'active' : ''}`}>
-                {vals.map(val =>
-                    <li className='link-item' key={val.header_id + val.link_title}>
+                {vals.map((val, index) =>
+                    <li className='link-item' key={index + val.link_title}>
                     //
                         <a href={val.link_path}>
                             &nbsp;{val.link_title}
