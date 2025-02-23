@@ -5,7 +5,7 @@ import Navbar from './components/Header/Navbar'
 import Footer from './components/Footer/Footer'
 
 // Pages
-import Home from './components/Home';
+import Home from './components/Home/Home';
 import Contact from './components/Contact';
 import Projects from './components/Projects';
 import ErrorBoundary from './components/ErrorBoundary';

@@ -1,0 +1,39 @@
+.hero-section {
+    width: 100%;
+}
+
+.hero-section::before {
+    content: "";
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("../../assets/mountain.webp");
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: fit-content;
+}
+
+
+.hero-profile-img {
+    margin: 10px
+}
+
+.hero-profile-img img{
+    max-width: 300px;
+    height: auto;
+    border-radius: 15px;
+}
