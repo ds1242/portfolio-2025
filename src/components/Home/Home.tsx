@@ -1,8 +1,14 @@
 import './Home.css'
 
-export default function Home() {
+interface HomeInfo {
+    blurb: string;
+    skillsIconClass: string[];
+}
+
+export default function Home(  homeInfo:HomeInfo  ) {
+
     return (
-        <div>
+        <>
             <div className="hero-section">
                 <div className='hero-content'>
                     <div className='hero-profile-img slide-right'>
@@ -11,11 +17,21 @@ export default function Home() {
                     <div className='hero-text slide-left'>
                         <h2>Welcome!</h2>
                         <p>
-                            I am David Shaw a passionate frontend developer with three years of hands-on experience and a degree in Information Systems from the University of Utah. Currently based at the University of Tennessee creating high impact web applications for the Libraries. Always eager to expand my knowledge and skills by embracing new challenges and opportunities for growth.
+                            { homeInfo.blurb }
                         </p>
                     </div>
                 </div>
             </div>
-        </div>
+            <div className='skills'>
+                <h2>Skills</h2>
+                <div className='skills-icons'>
+                    {homeInfo.skillsIconClass.map((iconCSS, index) => 
+                        <div key={index} className='skills-icon-grid-items '>
+                            <span className={iconCSS}></span>
+                        </div>
+                    )}
+                </div>
+            </div>
+        </>
     )
 }

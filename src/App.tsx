@@ -34,7 +34,7 @@ function App() {
     <div className='main'>
       <Navbar headerVals={siteInfoConfig.header} />
       <ErrorBoundary>
-        {currentPage === '/' && <Home />}
+        {currentPage === '/' && <Home { ...siteInfoConfig.homeInfo }/>}
       </ErrorBoundary>
       <ErrorBoundary>
         {currentPage === '/projects' && <Projects />}
