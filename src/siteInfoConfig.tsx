@@ -5,22 +5,14 @@ const config =
 {
     "header": [
         {
-            "header_id": 1,
-            "link_title": "Home",
+            "link_title": "About Me",
             "link_path": "/"
         },
-        {   
-            "header_id": 2,
-            "link_title": "About Me",
-            "link_path": "/about"
-        },
         {
-            "header_id": 3,
             "link_title": "Projects",
             "link_path": "/projects"
         },
         {
-            "header_id": 4,
             "link_title": "Contact",
             "link_path": "/contact"
         }
@@ -37,7 +29,26 @@ const config =
             "svg" : <LinkedInSVG />
         }
     ],
-    "projects": {}
+    "projects": {},
+    "homeInfo": {
+        "blurb": "I am David Shaw a passionate frontend developer with three years of hands-on experience and a degree in Information Systems from the University of Utah. Currently based at the University of Tennessee creating high impact web applications for the Libraries. Always eager to expand my knowledge and skills by embracing new challenges and opportunities for growth.",
+        "skillsIconClass": [
+            "fa6-brands--golang",
+            "devicon--python",
+            "logos--javascript",
+            "logos--html-5",
+            "logos--css-3",
+            "devicon--tailwindcss",
+            "logos--mysql",
+            "devicon--postgresql",
+            "devicon--mongodb-wordmark",
+            "skill-icons--graphql-dark",
+            "devicon--nodejs-wordmark",
+            "devicon--react",
+            "skill-icons--github-light",
+            "devicon--netlify"
+        ]
+    }
 
 }
 

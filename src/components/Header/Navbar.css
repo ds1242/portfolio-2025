@@ -32,6 +32,7 @@ ul.menu li {
     display: flex;
     align-items: center;
     padding-right: 10px;
+    cursor: pointer;
 }
 
 .link-item {
@@ -49,20 +50,20 @@ ul.menu li {
         flex-direction: column;
         align-items:baseline;
         width: 100%;
-        background-color: #333;
+        background-color: var(--third-color);
         position: absolute;
         top: 60px;
         left: 0;
         padding: 5px 0;
         opacity: 0;
-        transition: all 0.3s ease-in-out;
+        transition: all 0.2s ease-in-out;
         z-index: -1;
     }
 
     ul.menu.active {
         opacity: 1;
         transform: translateY(0);
-        z-index: 1;
+        z-index: 2;
     }
 
     ul.menu li {
@@ -74,6 +75,6 @@ ul.menu li {
         display: block;
         padding: 5px;
         cursor: pointer;
-        z-index: 2;
+        z-index: 3;
     }
 }

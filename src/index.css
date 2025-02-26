@@ -43,7 +43,7 @@ body{
 .link-underline a {
   color: var(--accent-color-light);
   text-decoration: none;
-  background-image: linear-gradient(var(--accent-color-bright), var(--accent-color-bright));
+  background-image: linear-gradient(#ffd101, #ffd101);
   background-size: 0% 0.1em;
   background-position-y: 100%;
   background-position-x: 50%;
@@ -57,4 +57,41 @@ body{
   background-size: 100% 0.1em;
 }
 
+.slide-right {
+  animation: 2s slide-right;
+}
+@keyframes slide-right {
+  from {
+    margin-left: -150%;
+  }
+  to {
+    margin-left: 0%;
+  }
+}
+.slide-left {
+  animation: 2s slide-left;
+}
+@keyframes slide-left {
+  from {
+    margin-right: -150%;
+  }
+  to {
+    margin-right: 0%;
+  }
+}
+
+
+.fade-in {
+  animation: 2s fade-in ease-in;
+  opacity: 1;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 
