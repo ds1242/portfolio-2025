@@ -5,9 +5,9 @@ import Navbar from './components/Header/Navbar'
 import Footer from './components/Footer/Footer'
 
 // Pages
-import Home from './components/Home/Home';
-import Contact from './components/Contact/Contact';
-import Projects from './components/Projects/Projects';
+import Home from './Pages/Home/Home';
+import Contact from './Pages/Contact/Contact';
+import Projects from './Pages/Projects/Projects';
 import ErrorBoundary from './components/ErrorBoundary';
 // import Content from './components/Content/Content'
 
