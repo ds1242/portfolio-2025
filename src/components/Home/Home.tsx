@@ -24,7 +24,7 @@ export default function Home(  homeInfo:HomeInfo  ) {
             </div>
             <div className='skills'>
                 <h2>Skills</h2>
-                <div className='skills-icons'>
+                <div className='skills-icons fade-in'>
                     {homeInfo.skillsIconClass.map((iconCSS, index) => 
                         <div key={index} className='skills-icon-grid-items '>
                             <span className={iconCSS}></span>
