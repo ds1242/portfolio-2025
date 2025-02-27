@@ -21,7 +21,8 @@
 }
 
 
-body{ 
+body { 
+  height: 100vh;
   margin:0px;
 }
 
@@ -41,7 +42,7 @@ body{
 }
 
 .link-underline a {
-  color: var(--accent-color-light);
+  color: var(--underline-color, --accent-color-light);
   text-decoration: none;
   background-image: linear-gradient(#ffd101, #ffd101);
   background-size: 0% 0.1em;

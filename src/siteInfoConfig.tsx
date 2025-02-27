@@ -49,6 +49,9 @@ const config =
             "devicon--netlify"
         ]
     }
+    // "contactInfo" : {
+    //     "blurb": 
+    // }
 
 }
 
