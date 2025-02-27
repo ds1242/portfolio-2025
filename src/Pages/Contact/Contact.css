@@ -16,6 +16,7 @@
 	padding: 2rem;
 	color: var(--accent-color-light);
 	--underline-color: var(--accent-color-bright);
+	border-radius: 10px;
 }
 
 .contact-header {
