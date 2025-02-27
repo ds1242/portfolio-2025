@@ -1,0 +1,28 @@
+.contact-page {
+	background-color: #86b9d8;
+	flex-grow: 1;
+}
+
+.contact-blurb {
+	display: flex;
+	justify-content: center;
+	margin: 4rem;
+}
+
+.contact-text {
+	background-color: rgba(29, 53, 87, 0.85);
+	margin-left: auto;
+	margin-right: auto;
+	padding: 2rem;
+	color: var(--accent-color-light);
+	--underline-color: var(--accent-color-bright);
+	border-radius: 10px;
+}
+
+.contact-header {
+	text-align: center;
+}
+
+.contact-info {
+	font-size: 18px;
+}
