@@ -9,6 +9,7 @@ interface ProjectInfo {
         description: string,
         tools: string[],
         image: string,
+        alt: string,
     }[];
 }
 

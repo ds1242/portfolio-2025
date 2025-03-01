@@ -54,3 +54,29 @@
 .card-github {
     flex-grow: 1;
 }
+
+.modal {
+    width: auto;
+    max-width: 600px;
+    text-wrap: wrap;
+}
+
+.modal img {
+    width: auto;
+    max-width: 600px;
+    height: auto;
+    object-fit: contain;
+}
+
+.modal-tools {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    text-wrap: wrap;
+}
+
+.modal-tools-title { 
+    margin: 0;
+    padding: 0;
+}
