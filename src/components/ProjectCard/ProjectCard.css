@@ -37,8 +37,6 @@
     background-color: #2980b9;
     color: white;
     transform: rotateY(180deg);
-    display: flex;
-    flex-direction: column;
 }
 
 .flip-card-front img {
@@ -46,4 +44,13 @@
     max-height: 300px;
     object-fit: cover;
     aspect-ratio: 1/1;
+}
+
+.flip-card-back-inner {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-github {
+    flex-grow: 1;
 }
