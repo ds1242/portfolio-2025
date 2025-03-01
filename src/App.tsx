@@ -37,7 +37,7 @@ function App() {
         {currentPage === '/' && <Home {...siteInfoConfig.homeInfo} />}
       </ErrorBoundary>
       <ErrorBoundary>
-        {currentPage === '/projects' && <Projects />}
+        {currentPage === '/projects' && <Projects {...siteInfoConfig.projects} />}
       </ErrorBoundary>
       <ErrorBoundary>
         {currentPage === '/contact' && <Contact />}

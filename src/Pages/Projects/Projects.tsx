@@ -1,5 +1,10 @@
+
+
+
 export default function Projects() {
     return (
-        <div>Projects</div>
+        <div className="project-page bg-gradient">
+            Projects
+        </div>
     )
 }
