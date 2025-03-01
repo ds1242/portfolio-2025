@@ -53,6 +53,7 @@ export default function ProjectCard({ ProjectInfo }: ProjectInfoProps) {
             </div>
 
             <dialog ref={dialogRef} className="modal">
+                <button onClick={closeDialog}>X</button>
                 <img src={ProjectInfo.image} alt={ProjectInfo.alt} />
                 <h2>{ProjectInfo.title}</h2>
                 <p>{ProjectInfo.description}</p>
@@ -62,7 +63,18 @@ export default function ProjectCard({ ProjectInfo }: ProjectInfoProps) {
                         <p>{tool}</p>
                     )}
                 </div>
-                <button onClick={closeDialog}>X</button>
+                <div className="modal-links link-underline">
+                    {ProjectInfo.link ?
+                        <div className="modal-link">
+                            <a href={ProjectInfo.link}>Visit this Site</a>
+                        </div>
+                        : ''}
+                    {ProjectInfo.github ?
+                        <div className="modal-github">
+                            <a className="" href={ProjectInfo.github}>See Github</a>
+                        </div>
+                        : ' '}
+                </div>
             </dialog>
         </>
     )

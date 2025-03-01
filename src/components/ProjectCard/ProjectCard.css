@@ -57,13 +57,13 @@
 
 .modal {
     width: auto;
-    max-width: 600px;
+    max-width: 800px;
     text-wrap: wrap;
 }
 
 .modal img {
     width: auto;
-    max-width: 600px;
+    max-width: 800px;
     height: auto;
     object-fit: contain;
 }
@@ -79,4 +79,11 @@
 .modal-tools-title { 
     margin: 0;
     padding: 0;
+    text-align: center;
+}
+
+.modal-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
