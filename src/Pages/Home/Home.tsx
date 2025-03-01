@@ -9,7 +9,7 @@ export default function Home(  homeInfo:HomeInfo  ) {
 
     return (
         <>
-            <div className="hero-section">
+            <div className="hero-section inset-border">
                 <div className='hero-content'>
                     <div className='hero-profile-img slide-right'>
                         <img src="src/assets/profile.webp" alt="picture of the website developer" />
@@ -22,7 +22,7 @@ export default function Home(  homeInfo:HomeInfo  ) {
                     </div>
                 </div>
             </div>
-            <div className='skills'>
+            <div className='skills inset-border bg-gradient'>
                 <h2>Skills</h2>
                 <div className='skills-icons fade-in'>
                     {homeInfo.skillsIconClass.map((iconCSS, index) => 

@@ -6,7 +6,7 @@ import "./Contact.css"
 
 export default function Contact() {
     return (
-        <div className="contact-page link-underline">
+        <div className="contact-page link-underline inset-border bg-gradient">
             <div className="contact-blurb fade-in">
                 <div className="contact-text">
                     <h2 className="contact-header">How to Contact Me</h2>
