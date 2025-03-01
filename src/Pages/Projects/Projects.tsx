@@ -7,7 +7,8 @@ interface ProjectInfo {
         link: string,
         github: string,
         description: string,
-        tools: string[]
+        tools: string[],
+        image: string,
     }[];
 }
 

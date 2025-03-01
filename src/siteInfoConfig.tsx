@@ -37,7 +37,8 @@ const config =
             "description": "This is the main website for the University of Tennessee in Knoxville's Libraries websites.  This site was using minimal imported modules.  I created the majority of the twig templates and styled with CSS mixed with Bootstrap 5.3 for layout.",
             "tools": [
                 "Drupal 10", "Boostrap 5.3", "CSS", "Twig", "PHP", "Git"
-            ]
+            ],
+            "image": "./src/assets/UTKMain.webp"
         },
     ],
     "homeInfo": {
