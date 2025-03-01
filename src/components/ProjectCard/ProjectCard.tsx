@@ -18,14 +18,13 @@ export default function ProjectCard({ ProjectInfo }: ProjectInfoProps) {
                     <div className="flip-card-front">
                         <img src={ProjectInfo.image} alt="" />
                     </div>
-                </div>
-                <div className="flip-card-back">
-                    <div>{ProjectInfo.title}</div>
-                    <div>{ProjectInfo.link}</div>
-                    <div>{ProjectInfo.github}</div>
+                    <div className="flip-card-back">
+                        <h2>{ProjectInfo.title}</h2>
+                        <div>{ProjectInfo.link}</div>
+                        <div>{ProjectInfo.github}</div>
+                    </div>
                 </div>
             </div>
-
         </>
     )
 }
