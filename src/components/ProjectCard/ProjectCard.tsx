@@ -20,8 +20,9 @@ export default function ProjectCard({ ProjectInfo }: ProjectInfoProps) {
                     </div>
                     <div className="flip-card-back">
                         <h2>{ProjectInfo.title}</h2>
-                        <div>{ProjectInfo.link}</div>
-                        <div>{ProjectInfo.github}</div>
+                        <a className="">See More Details</a>
+                        {ProjectInfo.github ? <a className="">See Github</a> : ' '}
+                        
                     </div>
                 </div>
             </div>
