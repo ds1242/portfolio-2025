@@ -52,7 +52,7 @@ export default function ProjectCard({ ProjectInfo }: ProjectInfoProps) {
                 </div>
             </div>
 
-            <dialog ref={dialogRef} className="modal">
+            <dialog ref={dialogRef} className="modal light-background-text dark-background-text">
                 <button onClick={closeDialog}>X</button>
                 <img src={ProjectInfo.image} alt={ProjectInfo.alt} />
                 <h2>{ProjectInfo.title}</h2>
@@ -73,7 +73,7 @@ export default function ProjectCard({ ProjectInfo }: ProjectInfoProps) {
                         <div className="modal-github">
                             <a className="" href={ProjectInfo.github}>See Github</a>
                         </div>
-                        : ' '}
+                        : ''}
                 </div>
             </dialog>
         </>
