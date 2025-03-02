@@ -4,7 +4,7 @@ import ProjectCard from "../../components/ProjectCard/ProjectCard"
 interface ProjectInfo {
     CardVals: {
         title: string,
-        link: string,
+        link?: string,
         github: string,
         description: string,
         tools: string[],
