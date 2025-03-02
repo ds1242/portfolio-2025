@@ -54,14 +54,23 @@ const config =
         },
         {
             "title": "Blog Aggregator",
-            // "link": "https://utk-lib-db.netlify.app",
             "github": "https://github.com/ds1242/gator",
             "description": "This is a CLI tool for scrapping RSS feeds.  It allows you to create a user, login, add feeds, and displays feeds. It can also be set to rescrape those feeds based on a time frame.",
             "tools": [
-                "Typescript", "TailwindCSS", "CSS", "Solr", "Netlify", "Git"
+                "Go", "Git"
             ],
-            "image": "./src/assets/DBSearch.webp",
-            "alt": "UTK database search screenshot"
+            "image": "./src/assets/gator.webp",
+            "alt": "gator CLI tool in use"
+        },
+        {
+            "title": "Highland Cow",
+            "github": "https://github.com/ds1242/highland-cow",
+            "description": "Full stack web app that I plan to expand to a React Native app that uses the phone camera to scan barcodes in.  Uses a Go REST API backend to a Postgres DB with a Typescript React frontend.  Not currently deployed but can run locally as a web application.",
+            "tools": [
+                "Go", "Typescript", "TailwindCSS", "Postgres", "REST", "Git"
+            ],
+            "image": "./src/assets/highlandcow.webp",
+            "alt": "Highland cow dashboard screenshot"
         },
         {
             "title": "Maze Solver",
@@ -70,7 +79,7 @@ const config =
             "tools": [
                 "Python3", "TKinter", "Git"
             ],
-            "image": "./src/assets/UTKMain.webp",
+            "image": "./src/assets/MazeSolver.webp",
             "alt": "Maze search solver screenshot"
         },
     ],
