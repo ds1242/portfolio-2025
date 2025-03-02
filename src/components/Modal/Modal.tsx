@@ -19,7 +19,7 @@ export default function Modal({ ProjectInfo, closeDialog, dialogRef }: ProjectIn
 
     useEffect(() => {
         if (dialogRef.current) {
-          dialogRef.current.showModal(); // Ensure the modal is shown
+          dialogRef.current.showModal();
         }
       }, [dialogRef]);
 
