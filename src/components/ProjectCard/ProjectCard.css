@@ -34,9 +34,11 @@
 }
 
 .flip-card-back {
-    background-color: #2980b9;
-    color: white;
+    background-color: var(--third-color);
+    color: var(--accent-color-light);
     transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
 }
 
 .flip-card-front img {
@@ -47,12 +49,10 @@
 }
 
 .flip-card-back-inner {
+    flex-grow:1;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
 }
 
-.card-github {
-    flex-grow: 1;
-}
 

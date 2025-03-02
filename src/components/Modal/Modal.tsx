@@ -31,7 +31,7 @@ export default function Modal({ ProjectInfo, closeDialog, dialogRef }: ProjectIn
             <img src={ProjectInfo.image} alt={ProjectInfo.alt} />
             <h2>{ProjectInfo.title}</h2>
             <p>{ProjectInfo.description}</p>
-            <h3 className="modal-tools-title">Tools</h3>
+            <h3 className="modal-tools-title">Built With:</h3>
             <div className="modal-tools">
                 {ProjectInfo.tools.map(tool => (
                     <p key={tool}>{tool}</p>
