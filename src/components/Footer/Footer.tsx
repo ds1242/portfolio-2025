@@ -10,7 +10,7 @@ interface FooterProps {
 
 export default function Footer({ footerVals }: FooterProps) {
     const d = new Date();
-    let year = d.getFullYear();
+    const year = d.getFullYear();
 
     return (
         <div className="footer">
