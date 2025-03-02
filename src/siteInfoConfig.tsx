@@ -38,7 +38,7 @@ const config =
             "tools": [
                 "Drupal 10", "Boostrap 5.3", "CSS", "Twig", "PHP", "Git"
             ],
-            "image": "./src/assets/UTKMain.webp",
+            "image": "/assets/UTKMain.webp",
             "alt": "UTK website screenshot"
         },
         {
@@ -49,7 +49,7 @@ const config =
             "tools": [
                 "Typescript", "TailwindCSS", "CSS", "Solr", "Netlify", "Git"
             ],
-            "image": "./src/assets/DBSearch.webp",
+            "image": "/assets/DBSearch.webp",
             "alt": "UTK database search screenshot"
         },
         {
@@ -59,7 +59,7 @@ const config =
             "tools": [
                 "Go", "Git"
             ],
-            "image": "./src/assets/gator.webp",
+            "image": "/assets/gator.webp",
             "alt": "gator CLI tool in use"
         },
         {
@@ -69,7 +69,7 @@ const config =
             "tools": [
                 "Go", "Typescript", "TailwindCSS", "Postgres", "REST", "Git"
             ],
-            "image": "./src/assets/highlandcow.webp",
+            "image": "/assets/highlandcow.webp",
             "alt": "Highland cow dashboard screenshot"
         },
         {
@@ -79,7 +79,7 @@ const config =
             "tools": [
                 "Python3", "TKinter", "Git"
             ],
-            "image": "./src/assets/MazeSolver.webp",
+            "image": "/assets/MazeSolver.webp",
             "alt": "Maze search solver screenshot"
         },
     ],
