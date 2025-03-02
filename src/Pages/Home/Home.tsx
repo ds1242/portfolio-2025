@@ -12,7 +12,7 @@ export default function Home(  homeInfo:HomeInfo  ) {
             <div className="hero-section inset-border">
                 <div className='hero-content'>
                     <div className='hero-profile-img slide-right'>
-                        <img src="src/assets/profile.webp" alt="picture of the website developer" />
+                        <img src="/assets/profile.webp" alt="picture of the website developer" />
                     </div>
                     <div className='hero-text slide-left'>
                         <h2>Welcome!</h2>
