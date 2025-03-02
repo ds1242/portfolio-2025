@@ -1,5 +1,6 @@
 import "./ProjectCard.css";
 import { useState, useRef } from "react";
+import Modal from "../Modal/Modal";
 interface ProjectInfoProps {
     ProjectInfo: {
         title: string;
@@ -14,18 +15,22 @@ interface ProjectInfoProps {
 
 export default function ProjectCard({ ProjectInfo }: ProjectInfoProps) {
     const [isOpen, setIsOpen] = useState(false);
-    const dialogRef = useRef(null);
+    const dialogRef = useRef<HTMLDialogElement>(null);
 
     // Open the dialog
     const openDialog = () => {
         setIsOpen(true);
-        dialogRef.current.showModal();
+        if (dialogRef.current) {
+            dialogRef.current.showModal();
+        }
     };
 
     // Close the dialog
     const closeDialog = () => {
         setIsOpen(false);
-        dialogRef.current.close();
+        if (dialogRef.current) {
+            dialogRef.current.close();
+        }
     };
 
 
@@ -40,42 +45,24 @@ export default function ProjectCard({ ProjectInfo }: ProjectInfoProps) {
                         <h2>{ProjectInfo.title}</h2>
                         <div className="flip-card-back-inner">
                             <div>
-                                <button className="" onClick={openDialog}>See More Details</button>
+                                <a className="button-style" onClick={openDialog}>See More Details</a>
                             </div>
                             {ProjectInfo.github ?
                                 <div className="card-github">
-                                    <a className="" href={ProjectInfo.github}>See Github</a>
+                                    <a className="button-style" href={ProjectInfo.github}>See Github</a>
                                 </div>
                                 : ' '}
                         </div>
                     </div>
                 </div>
             </div>
-
-            <dialog ref={dialogRef} className="modal light-background-text dark-background-text">
-                <button onClick={closeDialog}>X</button>
-                <img src={ProjectInfo.image} alt={ProjectInfo.alt} />
-                <h2>{ProjectInfo.title}</h2>
-                <p>{ProjectInfo.description}</p>
-                <h3 className='modal-tools-title'>Tools</h3>
-                <div className="modal-tools">
-                    {ProjectInfo.tools.map(tool =>
-                        <p>{tool}</p>
-                    )}
-                </div>
-                <div className="modal-links link-underline">
-                    {ProjectInfo.link ?
-                        <div className="modal-link">
-                            <a href={ProjectInfo.link}>Visit this Site</a>
-                        </div>
-                        : ''}
-                    {ProjectInfo.github ?
-                        <div className="modal-github">
-                            <a className="" href={ProjectInfo.github}>See Github</a>
-                        </div>
-                        : ''}
-                </div>
-            </dialog>
+            {isOpen && (
+                <Modal
+                    ProjectInfo={ProjectInfo}
+                    closeDialog={closeDialog}
+                    dialogRef={dialogRef}
+                />
+            )}
         </>
     )
 }

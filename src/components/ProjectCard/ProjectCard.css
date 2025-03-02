@@ -49,6 +49,7 @@
 .flip-card-back-inner {
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
 }
 
 .card-github {
@@ -70,6 +71,11 @@
     object-fit: contain;
 }
 
+.modal-close {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
 .modal-tools {
     display: flex;
     flex-direction: row;
@@ -78,7 +84,7 @@
     text-wrap: wrap;
 }
 
-.modal-tools-title { 
+.modal-tools-title {
     margin: 0;
     padding: 0;
     text-align: center;
@@ -95,51 +101,102 @@
 dialog:open {
     opacity: 1;
     transform: scaleY(1);
-  }
-  
-  /* Closed state of the dialog   */
-  dialog {
+}
+
+/* Closed state of the dialog   */
+dialog {
     opacity: 0;
     transform: scaleY(0);
     transition:
-      opacity 0.7s ease-out,
-      transform 0.7s ease-out,
-      overlay 0.7s ease-out allow-discrete,
-      display 0.7s ease-out allow-discrete;
+        opacity 0.7s ease-out,
+        transform 0.7s ease-out,
+        overlay 0.7s ease-out allow-discrete,
+        display 0.7s ease-out allow-discrete;
     /* Equivalent to
     transition: all 0.7s allow-discrete; */
-  }
-  
-  /* Before open state  */
-  /* Needs to be after the previous dialog:open rule to take effect,
+}
+
+/* Before open state  */
+/* Needs to be after the previous dialog:open rule to take effect,
       as the specificity is the same */
-  @starting-style {
+@starting-style {
     dialog:open {
-      opacity: 0;
-      transform: scaleY(0);
+        opacity: 0;
+        transform: scaleY(0);
     }
-  }
-  
-  /* Transition the :backdrop when the dialog modal is promoted to the top layer */
-  dialog::backdrop {
+}
+
+/* Transition the :backdrop when the dialog modal is promoted to the top layer */
+dialog::backdrop {
     background-color: rgb(0 0 0 / 0%);
     transition:
-      display 0.7s allow-discrete,
-      overlay 0.7s allow-discrete,
-      background-color 0.7s;
+        display 0.7s allow-discrete,
+        overlay 0.7s allow-discrete,
+        background-color 0.7s;
     /* Equivalent to
     transition: all 0.7s allow-discrete; */
-  }
-  
-  dialog:open::backdrop {
+}
+
+dialog:open::backdrop {
     background-color: rgb(0 0 0 / 45%);
-  }
-  
-  /* This starting-style rule cannot be nested inside the above selector
+}
+
+/* This starting-style rule cannot be nested inside the above selector
   because the nesting selector cannot represent pseudo-elements. */
-  
-  @starting-style {
+
+@starting-style {
     dialog:open::backdrop {
-      background-color: rgb(0 0 0 / 0%);
+        background-color: rgb(0 0 0 / 0%);
     }
-  }
+}
+
+
+@media (max-width: 768px) {
+    .modal {
+        width: auto;
+        max-width: 600px;
+        text-wrap: wrap;
+        background-color: var(--third-color);
+        border: none;
+    }
+    
+    .modal img {
+        width: auto;
+        max-width: 600px;
+        height: auto;
+        object-fit: contain;
+    }
+}
+
+@media (max-width:425px ) {
+    .modal {
+        width: auto;
+        max-width: 400px;
+        text-wrap: wrap;
+        background-color: var(--third-color);
+        border: none;
+    }
+    
+    .modal img {
+        width: auto;
+        max-width: 400px;
+        height: auto;
+        object-fit: contain;
+    }
+}
+@media (max-width: 375px) {
+    .modal {
+        width: auto;
+        max-width: 300px;
+        text-wrap: wrap;
+        background-color: var(--third-color);
+        border: none;
+    }
+    
+    .modal img {
+        width: auto;
+        max-width: 300px;
+        height: auto;
+        object-fit: contain;
+    }
+}
