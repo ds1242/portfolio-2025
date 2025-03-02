@@ -4,7 +4,7 @@ import Modal from "../Modal/Modal";
 interface ProjectInfoProps {
     ProjectInfo: {
         title: string;
-        link: string;
+        link?: string;
         github: string;
         description: string;
         tools: string[];

@@ -4,7 +4,7 @@ import { useEffect } from "react";
 interface ProjectInfoProps {
     ProjectInfo: {
         title: string;
-        link: string;
+        link?: string;
         github: string;
         description: string;
         tools: string[];
